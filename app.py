@@ -24,7 +24,7 @@ Also, make sure you have the `model.h5` file and `tensorflow` installed if you i
 import streamlit as st
 import numpy as np
 from PIL import Image
-import tensorflow as tf
+
 
 # Ensure the model file exists in your Colab environment or provide a full path
 # If you're running this as a .py file, the model.h5 should be in the same directory
