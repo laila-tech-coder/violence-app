@@ -37,7 +37,7 @@ from PIL import Image
 # If running directly in .ipynb, you might need to upload it or specify its path
 try:
     
-model = tf.keras.models.load_model('model.h5', compile=False)
+    model = tf.keras.models.load_model('model.h5', compile=False)
 
 except Exception as e:
     st.error(f"Error loading model.h5: {e}. Please ensure 'model.h5' is available in the expected path.")
