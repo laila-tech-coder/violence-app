@@ -1,8 +1,9 @@
-tensorflow>=2.15.0
+tensorflow
 streamlit
-pandas
+opencv-python-headless
 numpy
 Pillow
+
 
 
 
