@@ -35,9 +35,14 @@ from PIL import Image
 # Ensure the model file exists in your Colab environment or provide a full path
 # If you're running this as a .py file, the model.h5 should be in the same directory
 # If running directly in .ipynb, you might need to upload it or specify its path
+
+
+# ابحث عن سطر التحميل واستبدله بهذا بالظبط:
 try:
-    
+    model = tf.keras.models.load_model('model.h5', compile=False, safe_mode=False)
+except:
     model = tf.keras.models.load_model('model.h5', compile=False)
+
 
 except Exception as e:
     st.error(f"Error loading model.h5: {e}. Please ensure 'model.h5' is available in the expected path.")
