@@ -21,9 +21,15 @@ Also, make sure you have the `model.h5` file and `tensorflow` installed if you i
 ```
 """
 
+
+
 import streamlit as st
+import tensorflow as tf  # تأكد أن هذا السطر موجود في البداية
 import numpy as np
 from PIL import Image
+
+
+
 
 
 # Ensure the model file exists in your Colab environment or provide a full path
