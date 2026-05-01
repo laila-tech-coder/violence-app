@@ -38,10 +38,11 @@ from PIL import Image
 
 
 # ابحث عن سطر التحميل واستبدله بهذا بالظبط:
+
 try:
-    model = tf.keras.models.load_model('model.h5', compile=False, safe_mode=False)
-except:
+    # محاولة التحميل بالطريقة العادية أولاً
     model = tf.keras.models.load_model('model.h5', compile=False)
+
 
 
 except Exception as e:
